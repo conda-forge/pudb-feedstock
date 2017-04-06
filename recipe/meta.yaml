@@ -31,6 +31,8 @@ requirements:
     - pygments >=1.0
 
 test:
+  requires:
+    - pytest
   imports:
     - pudb
 
