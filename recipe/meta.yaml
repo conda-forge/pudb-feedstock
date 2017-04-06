@@ -1,4 +1,4 @@
-{% set version = "2017.1.1" %}
+{% set version = "2017.1.2" %}
 
 package:
   name: pudb
@@ -7,7 +7,7 @@ package:
 source:
   fn: pudb-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pudb/pudb-{{ version }}.tar.gz
-  sha256: 87117640902c5f602c8517d0167eb5c953a5bdede97975ba29ff17e3d570442c
+  sha256: 29d82ed05030146e5f2f9431926cc24f6c6c284cb451a4a850625fc0303e46e7
 
 build:
   # conda skeleton added this, but I'm unsure why it would be needed.
