@@ -36,6 +36,10 @@ test:
 
   commands:
     - pudb --help
+  source_files:
+    - test
+  commands:
+    - cd test && python -m pytest
 
 about:
   home: http://pypi.python.org/pypi/pudb
