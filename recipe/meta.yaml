@@ -1,4 +1,4 @@
-{% set version = "2018.1" %}
+{% set version = "2019.1" %}
 
 package:
   name: pudb
@@ -7,14 +7,14 @@ package:
 source:
   fn: pudb-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pudb/pudb-{{ version }}.tar.gz
-  sha256: 8d8b974641b7a7a2a721af01c9dce5eac8e05a2ceebc2680725ba8eef1ca876e
+  sha256: ac30cfc64580958ab7265decb4cabb9141f08781ff072e9a336d5a7942ce35a6
 
 build:
   # conda skeleton added this, but I'm unsure why it would be needed.
   # preserve_egg_dir: True
   entry_points:
     - pudb = pudb.run:main
-  number: 1000
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   # Urwid is skipped on Windows
   skip: true  # [win]
