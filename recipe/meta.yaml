@@ -1,4 +1,4 @@
-{% set version = "2019.1" %}
+{% set version = "2019.2" %}
 
 package:
   name: pudb
@@ -7,7 +7,7 @@ package:
 source:
   fn: pudb-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pudb/pudb-{{ version }}.tar.gz
-  sha256: ac30cfc64580958ab7265decb4cabb9141f08781ff072e9a336d5a7942ce35a6
+  sha256: e8f0ea01b134d802872184b05bffc82af29a1eb2f9374a277434b932d68f58dc
 
 build:
   # conda skeleton added this, but I'm unsure why it would be needed.
@@ -46,6 +46,7 @@ test:
 about:
   home: http://pypi.python.org/pypi/pudb
   license: MIT
+  license_file: LICENSE
   summary: 'A full-screen, console-based Python debugger'
 
   dev_url: https://github.com/inducer/pudb
