@@ -15,18 +15,14 @@ build:
   entry_points:
     - pudb = pudb.run:main
   number: 1
-  script: python setup.py install --single-version-externally-managed --record record.txt
-  # Urwid is skipped on Windows
-  skip: true  # [win]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
 requirements:
-  build:
+  host:
     - python
-    - setuptools
-    - urwid >=1.1.1
-    - pygments >=1.0
+    - pip
   run:
     - python
-    - setuptools
     - urwid >=1.1.1
     - pygments >=1.0
 
