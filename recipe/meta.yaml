@@ -1,4 +1,4 @@
-{% set version = "2019.2" %}
+{% set version = "2021.1" %}
 
 package:
   name: pudb
@@ -7,24 +7,24 @@ package:
 source:
   fn: pudb-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pudb/pudb-{{ version }}.tar.gz
-  sha256: e8f0ea01b134d802872184b05bffc82af29a1eb2f9374a277434b932d68f58dc
+  sha256: 309ee82b45a0ffca0bc4c7f521fd3e357589c764f339bdf9dcabb7ad40692d6e
 
 build:
   # conda skeleton added this, but I'm unsure why it would be needed.
   # preserve_egg_dir: True
   entry_points:
     - pudb = pudb.run:main
-  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - urwid >=1.1.1
-    - pygments >=1.0
+    - pygments >=2.7.4
+    - jedi >=0.18
 
 test:
   requires:
