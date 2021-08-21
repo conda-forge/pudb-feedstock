@@ -10,8 +10,7 @@ source:
   sha256: 309ee82b45a0ffca0bc4c7f521fd3e357589c764f339bdf9dcabb7ad40692d6e
 
 build:
-  # conda skeleton added this, but I'm unsure why it would be needed.
-  # preserve_egg_dir: True
+  number: 0
   entry_points:
     - pudb = pudb.run:main
   script: {{ PYTHON }} -m pip install . --no-deps -vv
