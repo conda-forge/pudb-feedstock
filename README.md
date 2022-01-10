@@ -1,7 +1,7 @@
 About pudb
 ==========
 
-Home: http://pypi.python.org/pypi/pudb
+Home: https://pypi.org/project/pudb/
 
 Package license: MIT
 
@@ -10,6 +10,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pudb-feedstock/
 Summary: A full-screen, console-based Python debugger
 
 Development: https://github.com/inducer/pudb
+
+Documentation: https://documen.tician.de/pudb/
 
 Current build status
 ====================
@@ -57,7 +59,8 @@ conda search pudb --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -119,4 +122,5 @@ Feedstock Maintainers
 
 * [@asmeurer](https://github.com/asmeurer/)
 * [@inducer](https://github.com/inducer/)
+* [@matthiasdiener](https://github.com/matthiasdiener/)
 

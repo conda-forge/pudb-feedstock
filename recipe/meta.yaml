@@ -1,4 +1,4 @@
-{% set version = "2021.1" %}
+{% set version = "2022.1" %}
 
 package:
   name: pudb
@@ -7,7 +7,7 @@ package:
 source:
   fn: pudb-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pudb/pudb-{{ version }}.tar.gz
-  sha256: 309ee82b45a0ffca0bc4c7f521fd3e357589c764f339bdf9dcabb7ad40692d6e
+  sha256: e827a4b489dcad561189535db6677becbf32164b2b44df00786eb2d5e00c587e 
 
 build:
   number: 0
@@ -39,14 +39,15 @@ test:
     - cd test && python -m pytest
 
 about:
-  home: http://pypi.python.org/pypi/pudb
+  home: https://pypi.org/project/pudb/
   license: MIT
   license_file: LICENSE
   summary: 'A full-screen, console-based Python debugger'
-
   dev_url: https://github.com/inducer/pudb
+  doc_url: https://documen.tician.de/pudb/ 
 
 extra:
   recipe-maintainers:
     - asmeurer
     - inducer
+    - matthiasdiener
