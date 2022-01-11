@@ -10,7 +10,7 @@ source:
   sha256: e827a4b489dcad561189535db6677becbf32164b2b44df00786eb2d5e00c587e 
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - pudb = pudb.run:main
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -22,6 +22,7 @@ requirements:
   run:
     - python >=3.6
     - urwid >=1.1.1
+    - urwid_readline
     - pygments >=2.7.4
     - jedi >=0.18
 
