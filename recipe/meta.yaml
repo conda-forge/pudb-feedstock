@@ -51,6 +51,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - jeongseok-meta
     - asmeurer
     - inducer
     - matthiasdiener
