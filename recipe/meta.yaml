@@ -10,7 +10,7 @@ source:
   sha256: 264f239e0538e52e83d3d020143100b3171cae17227674bb1b9f8b075f34849c
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - pudb = pudb.run:main
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -22,10 +22,11 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - urwid >=1.1.1
+    - urwid >=2.4
     - urwid_readline
+    - packaging >=20.0
     - pygments >=2.7.4
-    - jedi >=0.18
+    - jedi >=0.18,<1
 
 test:
   requires:
