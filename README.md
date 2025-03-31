@@ -149,5 +149,6 @@ Feedstock Maintainers
 
 * [@asmeurer](https://github.com/asmeurer/)
 * [@inducer](https://github.com/inducer/)
+* [@jeongseok-meta](https://github.com/jeongseok-meta/)
 * [@matthiasdiener](https://github.com/matthiasdiener/)
 
