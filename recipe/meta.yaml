@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pudb/pudb-{{ version }}.tar.gz
-  sha256: 264f239e0538e52e83d3d020143100b3171cae17227674bb1b9f8b075f34849c
+  sha256: a528b29c69ce8b182a337872c5f046071f6d68d3415c6d7bf53bd27c264f58d0
 
 build:
   number: 0
