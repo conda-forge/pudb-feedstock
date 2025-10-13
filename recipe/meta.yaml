@@ -10,7 +10,7 @@ source:
   sha256: a528b29c69ce8b182a337872c5f046071f6d68d3415c6d7bf53bd27c264f58d0
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - pudb = pudb.run:main
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -34,13 +34,11 @@ test:
     - python {{ python_min }}
   imports:
     - pudb
-
-  commands:
-    - pudb --help
   source_files:
     - pudb/test
   commands:
     - cd pudb/test && python -m pytest
+    - pudb --help
 
 about:
   home: https://pypi.org/project/pudb/
