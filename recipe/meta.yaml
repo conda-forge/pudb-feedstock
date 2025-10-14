@@ -1,4 +1,4 @@
-{% set version = "2025.1" %}
+{% set version = "2025.1.1" %}
 {% set python_min = python_min|default("3.6") %}
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pudb/pudb-{{ version }}.tar.gz
-  sha256: a528b29c69ce8b182a337872c5f046071f6d68d3415c6d7bf53bd27c264f58d0
+  sha256: b7c245c7531c792643612620aa812b95ec80a22fd0e67bde4d84734692dc4b72
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - pudb = pudb.run:main
   script: {{ PYTHON }} -m pip install . --no-deps -vv
